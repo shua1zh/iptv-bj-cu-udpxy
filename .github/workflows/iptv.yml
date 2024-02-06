@@ -47,7 +47,7 @@ jobs:
           file-name: origin.m3u
           
       - name: change file
-        run: sed 's/rtp:\/\//http:\/\/192.168.31.91:4022\/rtp\//' origin.m3u >> iptv.m3u
+        run: sed 's/rtp:\/\//http:\/\/192.168.31.1:5201\/rtp\//' origin.m3u > iptv.m3u
         
       - name: delete origin file
         run: rm origin.m3u
